@@ -1,6 +1,3 @@
-Here's a `README.md` file based on your instructions:
-
-````markdown
 # Typing Test TUI
 
 A simple terminal-based typing test application with a text user interface (TUI).
@@ -15,6 +12,7 @@ cd typi
 chmod +x run.sh
 ./run.sh
 ```
+
 ````
 
 > ⚠️ The script will compile the program and move the binary to `/usr/local/bin`.
@@ -24,7 +22,7 @@ chmod +x run.sh
 Once installed, you can run the typing test from anywhere by typing:
 
 ```bash
-typing_test
+typi
 ```
 
 ## Requirements
@@ -51,3 +49,4 @@ typi/
 ├── CMakeLists.txt   # Build configuration
 └── README.md
 ```
+````

@@ -12,7 +12,7 @@ make
 
 if [ -f typing_test ]; then
   echo "Moving typing_test to /usr/local/bin..."
-  sudo mv typing_test /usr/local/bin/
+  sudo mv typi /usr/local/bin/
 else
   echo "Error: typing_test binary not found!"
   exit 1
