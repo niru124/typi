@@ -31,11 +31,30 @@ Make sure you have the following installed:
 - `g++` or `clang++`
 - `make`
 
-You can install them on Ubuntu/Debian-based systems using:
+### 🐧 Ubuntu / Debian
 
 ```bash
 sudo apt update
 sudo apt install build-essential cmake
+```
+
+### 🐧 Arch Linux / Manjaro
+
+```bash
+sudo pacman -S base-devel cmake
+```
+
+### 🐧 Fedora
+
+```bash
+sudo dnf groupinstall "Development Tools"
+sudo dnf install cmake
+```
+
+### 🐧 Gentoo
+
+```bash
+sudo emerge --ask sys-devel/gcc cmake
 ```
 
 ## Project Structure
