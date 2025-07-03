@@ -13,8 +13,6 @@ chmod +x run.sh
 ./run.sh
 ```
 
-````
-
 > ⚠️ The script will compile the program and move the binary to `/usr/local/bin`.
 
 ## Usage
@@ -49,4 +47,3 @@ typi/
 ├── CMakeLists.txt   # Build configuration
 └── README.md
 ```
-````
