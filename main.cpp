@@ -38,7 +38,7 @@ int main() {
   // Generate random word string
   string expected;
   vector<string> store;
-  int n = 10;
+  int n = 20;
   for (int i = 0; i < n; i++) {
     string temp = words[dis(gen)];
     expected += temp;
@@ -149,16 +149,6 @@ int main() {
   cout << "Correct: " << res.first << ", Incorrect: " << res.second << endl;
   cout << "Gross WPM: " << grossWPM << ", Net WPM: " << netWPM << endl;
 
-  // if (typed == expected) {
-  //   cout << GREEN << "Correct!" << RESET << endl;
-  // } else {
-  //   cout << RED << "Try again." << RESET << endl;
-  // }
-
-  // cout << "\nPer-word WPM values:\n";
-  // for (size_t i = 0; i < y.size(); ++i) {
-  //   cout << "Word " << i + 1 << ": " << y[i] << " WPM\n";
-  // }
   vector<int> x;
 
   for (size_t i = 0; i < y.size(); ++i)

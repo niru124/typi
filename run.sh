@@ -1,21 +1,17 @@
 #!/bin/bash
+set -e
 
-set -e  # Exit immediately if a command exits with a non-zero status.
+# This script builds and runs the typi project.
 
-if [ ! -d build ]; then
-  mkdir build
-fi
+# Create a build directory if it doesn't exist
+mkdir -p build
 cd build
 
+# Configure the project with CMake
 cmake ..
+
+# Build the project
 make
 
-if [ -f typing_test ]; then
-  echo "Moving typing_test to /usr/local/bin..."
-  sudo mv typi /usr/local/bin/
-else
-  echo "Error: typing_test binary not found!"
-  exit 1
-fi
-
-typing_test
+# Run the executable
+./typi
