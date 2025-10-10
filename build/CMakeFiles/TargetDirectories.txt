@@ -1,0 +1,3 @@
+/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles/typi.dir
+/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles/edit_cache.dir
+/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles/rebuild_cache.dir
