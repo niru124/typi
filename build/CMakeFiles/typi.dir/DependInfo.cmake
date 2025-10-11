@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/feedback.cpp" "CMakeFiles/typi.dir/feedback.cpp.o" "gcc" "CMakeFiles/typi.dir/feedback.cpp.o.d"
-  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/main.cpp" "CMakeFiles/typi.dir/main.cpp.o" "gcc" "CMakeFiles/typi.dir/main.cpp.o.d"
-  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/makegraph.cpp" "CMakeFiles/typi.dir/makegraph.cpp.o" "gcc" "CMakeFiles/typi.dir/makegraph.cpp.o.d"
-  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/terminal_utils.cpp" "CMakeFiles/typi.dir/terminal_utils.cpp.o" "gcc" "CMakeFiles/typi.dir/terminal_utils.cpp.o.d"
+  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/feedback.cpp" "CMakeFiles/typi.dir/src/feedback.cpp.o" "gcc" "CMakeFiles/typi.dir/src/feedback.cpp.o.d"
+  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/main.cpp" "CMakeFiles/typi.dir/src/main.cpp.o" "gcc" "CMakeFiles/typi.dir/src/main.cpp.o.d"
+  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/makegraph.cpp" "CMakeFiles/typi.dir/src/makegraph.cpp.o" "gcc" "CMakeFiles/typi.dir/src/makegraph.cpp.o.d"
+  "/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/terminal_utils.cpp" "CMakeFiles/typi.dir/src/terminal_utils.cpp.o" "gcc" "CMakeFiles/typi.dir/src/terminal_utils.cpp.o.d"
   "" "typi" "gcc" "CMakeFiles/typi.dir/link.d"
   )
 

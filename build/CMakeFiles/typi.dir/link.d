@@ -2,10 +2,10 @@ typi: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
-  CMakeFiles/typi.dir/main.cpp.o \
-  CMakeFiles/typi.dir/terminal_utils.cpp.o \
-  CMakeFiles/typi.dir/feedback.cpp.o \
-  CMakeFiles/typi.dir/makegraph.cpp.o \
+  CMakeFiles/typi.dir/src/main.cpp.o \
+  CMakeFiles/typi.dir/src/terminal_utils.cpp.o \
+  CMakeFiles/typi.dir/src/feedback.cpp.o \
+  CMakeFiles/typi.dir/src/makegraph.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -40,13 +40,13 @@ typi: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
-CMakeFiles/typi.dir/main.cpp.o:
+CMakeFiles/typi.dir/src/main.cpp.o:
 
-CMakeFiles/typi.dir/terminal_utils.cpp.o:
+CMakeFiles/typi.dir/src/terminal_utils.cpp.o:
 
-CMakeFiles/typi.dir/feedback.cpp.o:
+CMakeFiles/typi.dir/src/feedback.cpp.o:
 
-CMakeFiles/typi.dir/makegraph.cpp.o:
+CMakeFiles/typi.dir/src/makegraph.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 

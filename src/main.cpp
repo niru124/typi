@@ -47,7 +47,7 @@ int main() {
     store.push_back(temp);
   }
 
-  cout << GREEN << expected << endl;
+  showLiveFeedback2(expected, typed);
   pair<int, int> res;
 
   enableRawMode();

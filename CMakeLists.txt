@@ -3,12 +3,15 @@ project(typi)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Include the sciplot directory
-include_directories(${CMAKE_SOURCE_DIR}/sciplot)
+# Include the sciplot and include directories
+include_directories(
+    ${CMAKE_SOURCE_DIR}/sciplot
+    ${CMAKE_SOURCE_DIR}/include
+)
 
 add_executable(typi
-    main.cpp
-    terminal_utils.cpp
-    feedback.cpp
-    makegraph.cpp
+    src/main.cpp
+    src/terminal_utils.cpp
+    src/feedback.cpp
+    src/makegraph.cpp
 )

@@ -129,101 +129,101 @@ typi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/build
 .PHONY : typi/fast
 
-feedback.o: feedback.cpp.o
-.PHONY : feedback.o
+src/feedback.o: src/feedback.cpp.o
+.PHONY : src/feedback.o
 
 # target to build an object file
-feedback.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/feedback.cpp.o
-.PHONY : feedback.cpp.o
+src/feedback.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/feedback.cpp.o
+.PHONY : src/feedback.cpp.o
 
-feedback.i: feedback.cpp.i
-.PHONY : feedback.i
+src/feedback.i: src/feedback.cpp.i
+.PHONY : src/feedback.i
 
 # target to preprocess a source file
-feedback.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/feedback.cpp.i
-.PHONY : feedback.cpp.i
+src/feedback.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/feedback.cpp.i
+.PHONY : src/feedback.cpp.i
 
-feedback.s: feedback.cpp.s
-.PHONY : feedback.s
+src/feedback.s: src/feedback.cpp.s
+.PHONY : src/feedback.s
 
 # target to generate assembly for a file
-feedback.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/feedback.cpp.s
-.PHONY : feedback.cpp.s
+src/feedback.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/feedback.cpp.s
+.PHONY : src/feedback.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-makegraph.o: makegraph.cpp.o
-.PHONY : makegraph.o
+src/makegraph.o: src/makegraph.cpp.o
+.PHONY : src/makegraph.o
 
 # target to build an object file
-makegraph.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/makegraph.cpp.o
-.PHONY : makegraph.cpp.o
+src/makegraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/makegraph.cpp.o
+.PHONY : src/makegraph.cpp.o
 
-makegraph.i: makegraph.cpp.i
-.PHONY : makegraph.i
+src/makegraph.i: src/makegraph.cpp.i
+.PHONY : src/makegraph.i
 
 # target to preprocess a source file
-makegraph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/makegraph.cpp.i
-.PHONY : makegraph.cpp.i
+src/makegraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/makegraph.cpp.i
+.PHONY : src/makegraph.cpp.i
 
-makegraph.s: makegraph.cpp.s
-.PHONY : makegraph.s
+src/makegraph.s: src/makegraph.cpp.s
+.PHONY : src/makegraph.s
 
 # target to generate assembly for a file
-makegraph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/makegraph.cpp.s
-.PHONY : makegraph.cpp.s
+src/makegraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/makegraph.cpp.s
+.PHONY : src/makegraph.cpp.s
 
-terminal_utils.o: terminal_utils.cpp.o
-.PHONY : terminal_utils.o
+src/terminal_utils.o: src/terminal_utils.cpp.o
+.PHONY : src/terminal_utils.o
 
 # target to build an object file
-terminal_utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/terminal_utils.cpp.o
-.PHONY : terminal_utils.cpp.o
+src/terminal_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/terminal_utils.cpp.o
+.PHONY : src/terminal_utils.cpp.o
 
-terminal_utils.i: terminal_utils.cpp.i
-.PHONY : terminal_utils.i
+src/terminal_utils.i: src/terminal_utils.cpp.i
+.PHONY : src/terminal_utils.i
 
 # target to preprocess a source file
-terminal_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/terminal_utils.cpp.i
-.PHONY : terminal_utils.cpp.i
+src/terminal_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/terminal_utils.cpp.i
+.PHONY : src/terminal_utils.cpp.i
 
-terminal_utils.s: terminal_utils.cpp.s
-.PHONY : terminal_utils.s
+src/terminal_utils.s: src/terminal_utils.cpp.s
+.PHONY : src/terminal_utils.s
 
 # target to generate assembly for a file
-terminal_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/terminal_utils.cpp.s
-.PHONY : terminal_utils.cpp.s
+src/terminal_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typi.dir/build.make CMakeFiles/typi.dir/src/terminal_utils.cpp.s
+.PHONY : src/terminal_utils.cpp.s
 
 # Help Target
 help:
@@ -234,18 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... typi"
-	@echo "... feedback.o"
-	@echo "... feedback.i"
-	@echo "... feedback.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... makegraph.o"
-	@echo "... makegraph.i"
-	@echo "... makegraph.s"
-	@echo "... terminal_utils.o"
-	@echo "... terminal_utils.i"
-	@echo "... terminal_utils.s"
+	@echo "... src/feedback.o"
+	@echo "... src/feedback.i"
+	@echo "... src/feedback.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/makegraph.o"
+	@echo "... src/makegraph.i"
+	@echo "... src/makegraph.s"
+	@echo "... src/terminal_utils.o"
+	@echo "... src/terminal_utils.i"
+	@echo "... src/terminal_utils.s"
 .PHONY : help
 
 

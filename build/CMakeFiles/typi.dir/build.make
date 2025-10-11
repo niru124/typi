@@ -72,76 +72,76 @@ include CMakeFiles/typi.dir/flags.make
 CMakeFiles/typi.dir/codegen:
 .PHONY : CMakeFiles/typi.dir/codegen
 
-CMakeFiles/typi.dir/main.cpp.o: CMakeFiles/typi.dir/flags.make
-CMakeFiles/typi.dir/main.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/main.cpp
-CMakeFiles/typi.dir/main.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/typi.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/main.cpp.o -MF CMakeFiles/typi.dir/main.cpp.o.d -o CMakeFiles/typi.dir/main.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/main.cpp
+CMakeFiles/typi.dir/src/main.cpp.o: CMakeFiles/typi.dir/flags.make
+CMakeFiles/typi.dir/src/main.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/main.cpp
+CMakeFiles/typi.dir/src/main.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/typi.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/src/main.cpp.o -MF CMakeFiles/typi.dir/src/main.cpp.o.d -o CMakeFiles/typi.dir/src/main.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/main.cpp
 
-CMakeFiles/typi.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/main.cpp > CMakeFiles/typi.dir/main.cpp.i
+CMakeFiles/typi.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/main.cpp > CMakeFiles/typi.dir/src/main.cpp.i
 
-CMakeFiles/typi.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/main.cpp -o CMakeFiles/typi.dir/main.cpp.s
+CMakeFiles/typi.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/main.cpp -o CMakeFiles/typi.dir/src/main.cpp.s
 
-CMakeFiles/typi.dir/terminal_utils.cpp.o: CMakeFiles/typi.dir/flags.make
-CMakeFiles/typi.dir/terminal_utils.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/terminal_utils.cpp
-CMakeFiles/typi.dir/terminal_utils.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/typi.dir/terminal_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/terminal_utils.cpp.o -MF CMakeFiles/typi.dir/terminal_utils.cpp.o.d -o CMakeFiles/typi.dir/terminal_utils.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/terminal_utils.cpp
+CMakeFiles/typi.dir/src/terminal_utils.cpp.o: CMakeFiles/typi.dir/flags.make
+CMakeFiles/typi.dir/src/terminal_utils.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/terminal_utils.cpp
+CMakeFiles/typi.dir/src/terminal_utils.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/typi.dir/src/terminal_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/src/terminal_utils.cpp.o -MF CMakeFiles/typi.dir/src/terminal_utils.cpp.o.d -o CMakeFiles/typi.dir/src/terminal_utils.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/terminal_utils.cpp
 
-CMakeFiles/typi.dir/terminal_utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/terminal_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/terminal_utils.cpp > CMakeFiles/typi.dir/terminal_utils.cpp.i
+CMakeFiles/typi.dir/src/terminal_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/src/terminal_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/terminal_utils.cpp > CMakeFiles/typi.dir/src/terminal_utils.cpp.i
 
-CMakeFiles/typi.dir/terminal_utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/terminal_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/terminal_utils.cpp -o CMakeFiles/typi.dir/terminal_utils.cpp.s
+CMakeFiles/typi.dir/src/terminal_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/src/terminal_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/terminal_utils.cpp -o CMakeFiles/typi.dir/src/terminal_utils.cpp.s
 
-CMakeFiles/typi.dir/feedback.cpp.o: CMakeFiles/typi.dir/flags.make
-CMakeFiles/typi.dir/feedback.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/feedback.cpp
-CMakeFiles/typi.dir/feedback.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/typi.dir/feedback.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/feedback.cpp.o -MF CMakeFiles/typi.dir/feedback.cpp.o.d -o CMakeFiles/typi.dir/feedback.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/feedback.cpp
+CMakeFiles/typi.dir/src/feedback.cpp.o: CMakeFiles/typi.dir/flags.make
+CMakeFiles/typi.dir/src/feedback.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/feedback.cpp
+CMakeFiles/typi.dir/src/feedback.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/typi.dir/src/feedback.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/src/feedback.cpp.o -MF CMakeFiles/typi.dir/src/feedback.cpp.o.d -o CMakeFiles/typi.dir/src/feedback.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/feedback.cpp
 
-CMakeFiles/typi.dir/feedback.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/feedback.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/feedback.cpp > CMakeFiles/typi.dir/feedback.cpp.i
+CMakeFiles/typi.dir/src/feedback.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/src/feedback.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/feedback.cpp > CMakeFiles/typi.dir/src/feedback.cpp.i
 
-CMakeFiles/typi.dir/feedback.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/feedback.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/feedback.cpp -o CMakeFiles/typi.dir/feedback.cpp.s
+CMakeFiles/typi.dir/src/feedback.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/src/feedback.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/feedback.cpp -o CMakeFiles/typi.dir/src/feedback.cpp.s
 
-CMakeFiles/typi.dir/makegraph.cpp.o: CMakeFiles/typi.dir/flags.make
-CMakeFiles/typi.dir/makegraph.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/makegraph.cpp
-CMakeFiles/typi.dir/makegraph.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/typi.dir/makegraph.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/makegraph.cpp.o -MF CMakeFiles/typi.dir/makegraph.cpp.o.d -o CMakeFiles/typi.dir/makegraph.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/makegraph.cpp
+CMakeFiles/typi.dir/src/makegraph.cpp.o: CMakeFiles/typi.dir/flags.make
+CMakeFiles/typi.dir/src/makegraph.cpp.o: /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/makegraph.cpp
+CMakeFiles/typi.dir/src/makegraph.cpp.o: CMakeFiles/typi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/typi.dir/src/makegraph.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/typi.dir/src/makegraph.cpp.o -MF CMakeFiles/typi.dir/src/makegraph.cpp.o.d -o CMakeFiles/typi.dir/src/makegraph.cpp.o -c /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/makegraph.cpp
 
-CMakeFiles/typi.dir/makegraph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/makegraph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/makegraph.cpp > CMakeFiles/typi.dir/makegraph.cpp.i
+CMakeFiles/typi.dir/src/makegraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/typi.dir/src/makegraph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/makegraph.cpp > CMakeFiles/typi.dir/src/makegraph.cpp.i
 
-CMakeFiles/typi.dir/makegraph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/makegraph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/makegraph.cpp -o CMakeFiles/typi.dir/makegraph.cpp.s
+CMakeFiles/typi.dir/src/makegraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/typi.dir/src/makegraph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/makegraph.cpp -o CMakeFiles/typi.dir/src/makegraph.cpp.s
 
 # Object files for target typi
 typi_OBJECTS = \
-"CMakeFiles/typi.dir/main.cpp.o" \
-"CMakeFiles/typi.dir/terminal_utils.cpp.o" \
-"CMakeFiles/typi.dir/feedback.cpp.o" \
-"CMakeFiles/typi.dir/makegraph.cpp.o"
+"CMakeFiles/typi.dir/src/main.cpp.o" \
+"CMakeFiles/typi.dir/src/terminal_utils.cpp.o" \
+"CMakeFiles/typi.dir/src/feedback.cpp.o" \
+"CMakeFiles/typi.dir/src/makegraph.cpp.o"
 
 # External object files for target typi
 typi_EXTERNAL_OBJECTS =
 
-typi: CMakeFiles/typi.dir/main.cpp.o
-typi: CMakeFiles/typi.dir/terminal_utils.cpp.o
-typi: CMakeFiles/typi.dir/feedback.cpp.o
-typi: CMakeFiles/typi.dir/makegraph.cpp.o
+typi: CMakeFiles/typi.dir/src/main.cpp.o
+typi: CMakeFiles/typi.dir/src/terminal_utils.cpp.o
+typi: CMakeFiles/typi.dir/src/feedback.cpp.o
+typi: CMakeFiles/typi.dir/src/makegraph.cpp.o
 typi: CMakeFiles/typi.dir/build.make
 typi: CMakeFiles/typi.dir/compiler_depend.ts
 typi: CMakeFiles/typi.dir/link.txt

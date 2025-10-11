@@ -1,6 +1,7 @@
 #ifndef FEEDBACK_H
 #define FEEDBACK_H
 
+#include "terminal_utils.h"
 #include <string>
 #include <utility>
 

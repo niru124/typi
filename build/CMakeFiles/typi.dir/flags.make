@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/sciplot
+CXX_INCLUDES = -I/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/sciplot -I/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/include
 
 CXX_FLAGS = -std=gnu++17
 

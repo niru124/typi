@@ -1,8 +1,8 @@
-#include "sciplot/sciplot/Canvas.hpp"
-#include "sciplot/sciplot/Constants.hpp"
-#include "sciplot/sciplot/Figure.hpp"
-#include "sciplot/sciplot/Plot2D.hpp"
-#include "sciplot/sciplot/sciplot.hpp"
+#include "../sciplot/sciplot/Canvas.hpp"
+#include "../sciplot/sciplot/Constants.hpp"
+#include "../sciplot/sciplot/Figure.hpp"
+#include "../sciplot/sciplot/Plot2D.hpp"
+#include "../sciplot/sciplot/sciplot.hpp"
 #include <vector>
 using namespace sciplot;
 using namespace std;

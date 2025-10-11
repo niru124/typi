@@ -1,5 +1,6 @@
 #include "terminal_utils.h"
 #include <string>
+#include <sys/ioctl.h>
 #include <termios.h>
 #include <unistd.h>
 
@@ -14,4 +15,12 @@ void enableRawMode() {
   struct termios raw = orig_termios;
   raw.c_lflag &= ~(ECHO | ICANON); // disable echo and canonical mode
   tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
+}
+
+int getTerminalWidth() {
+  struct winsize size;
+  if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &size) == 0) {
+    return size.ws_col;
+  }
+  return 80; // default to 80 if ioctl fails
 }
