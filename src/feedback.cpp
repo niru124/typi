@@ -7,9 +7,8 @@
 #define RESET "\033[0m"
 #define RED "\033[31m"
 #define GREEN "\033[32m"
-#define BG_RED "\033[41m"
+#define MAUVE "\033[38;2;203;166;247m"
 #define UNDERLINE "\033[4m"
-#define LAVENDER "\033[95m"
 #define BLUE "\033[34m"
 #define NO_UNDERLINE "\033[24m"
 
@@ -45,8 +44,17 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
 
   size_t typed_char_index = 0;
 
+  // Determine the index of the word currently being typed or about to be typed
+  size_t current_word_idx;
+  if (typed.empty() || (!typed.empty() && isspace(typed.back()))) {
+    current_word_idx = typed_words.size();
+  } else {
+    current_word_idx = typed_words.size() - 1;
+  }
+
   for (size_t i = 0; i < expected_words.size(); ++i) {
     const std::string &expected_word = expected_words[i];
+    bool is_current_word = (i == current_word_idx);
 
     if (i < typed_words.size()) {
       const std::string &typed_word = typed_words[i];
@@ -59,6 +67,7 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
           std::cout << UNDERLINE;
 
         if (j < typed_word.length()) {
+          if (is_current_word) std::cout << BLUE;
           if (typed_word[j] == expected_word[j]) {
             std::cout << GREEN << "\033[1m" << expected_word[j] << RESET;
             total_correct++;
@@ -67,11 +76,8 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
             total_incorrect++;
           }
         } else {
-          if (i == typed_words.size() - 1 && !trailing_space) {
-            std::cout << BLUE << "\033[1m" << expected_word[j] << RESET;
-          } else {
-            std::cout << "\033[1m" << expected_word[j] << RESET;
-          }
+          // Untyped part of the current word
+          std::cout << (is_current_word ? BLUE : "") << "\033[1m" << expected_word[j] << RESET;
         }
         if (is_cursor_pos)
           std::cout << NO_UNDERLINE;
@@ -79,7 +85,7 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
 
       // Render extra (over-typed) characters
       if (typed_word.length() > expected_word.length()) {
-        std::cout << LAVENDER;
+        std::cout << MAUVE;
         for (size_t j = expected_word.length(); j < typed_word.length(); ++j) {
           bool is_cursor_pos =
               typed_char_index + j == typed.length() && !trailing_space;
@@ -93,13 +99,12 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
         total_incorrect += (typed_word.length() - expected_word.length());
       }
     } else {
-      // This is an untyped word. Place cursor at the beginning if it belongs
-      // here.
+      // This is an untyped word.
       bool is_cursor_pos =
           typed_char_index == typed.length() && !trailing_space;
       if (is_cursor_pos)
         std::cout << UNDERLINE;
-      if (i == typed_words.size()) {
+      if (is_current_word) {
         std::cout << BLUE << "\033[1m" << expected_word << RESET;
       } else {
         std::cout << "\033[1m" << expected_word << RESET;
@@ -120,11 +125,11 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
           (typed_char_index - 1 == typed.length()) ||
           (trailing_space && typed_char_index - 1 == typed.length() - 1);
 
-      if (is_cursor_pos) {
-        std::cout << UNDERLINE << " " << NO_UNDERLINE;
-      } else {
+      // if (is_cursor_pos) {
+      //   std::cout << UNDERLINE << " " << NO_UNDERLINE;
+      // } else {
         std::cout << " ";
-      }
+      // }
     }
   }
 
