@@ -4,5 +4,6 @@
 void disableRawMode();
 void enableRawMode();
 int getTerminalWidth();
+void printBold(const char* text);
 
 #endif

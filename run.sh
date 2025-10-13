@@ -13,5 +13,9 @@ cmake ..
 # Build the project
 make
 
+# move the executable to /usr/local/bin 
+sudo cp typi /usr/local/bin
+
 # Run the executable
 ./typi
+

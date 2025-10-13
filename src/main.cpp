@@ -144,10 +144,12 @@ int main() {
   int netWPM = (grossWPM - (res.second / total_minutes));
 
   cout << fixed << setprecision(2);
-  cout << "Time taken: " << total_duration.count() << " seconds ("
-       << total_minutes << " minutes)" << endl;
-  cout << "Correct: " << res.first << ", Incorrect: " << res.second << endl;
-  cout << "Gross WPM: " << grossWPM << ", Net WPM: " << netWPM << endl;
+  printBold("Time taken: ");
+  cout << total_duration.count() << " seconds (" << total_minutes << " minutes)" << endl;
+  printBold("Correct: ");
+  cout << res.first << ", Incorrect: " << res.second << endl;
+  printBold("Gross WPM: ");
+  cout << grossWPM << ", Net WPM: " << netWPM << endl;
 
   // if (typed == expected) {
   //   cout << GREEN << "Correct!" << RESET << endl;

@@ -9,18 +9,12 @@ using namespace std;
 
 void make_graph(vector<int> x, vector<double> y) {
   Plot2D plot;
-  plot.drawCurveFilled(x, y)
-      .above()
-      .fillColor("orange")
-      .label("y = wpm")
-      .lineWidth(6);
+  plot.drawCurveFilled(x, y).above().fillColor("orange").lineWidth(6);
   plot.palette("paired");
 
-  plot.xlabel("X Axis");
-  plot.ylabel("Y Axis");
-  plot.legend().atTopLeft();
+  plot.xlabel("Word");
+  plot.ylabel("WPM");
 
-  // Title is applied to the Figure, not the Plot
   Figure fig = {{plot}};
   fig.title("WPM");
 

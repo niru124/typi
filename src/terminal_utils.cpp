@@ -24,3 +24,7 @@ int getTerminalWidth() {
   }
   return 80; // default to 80 if ioctl fails
 }
+
+void printBold(const char* text) {
+    printf("\033[1m%s\033[0m", text);
+}
