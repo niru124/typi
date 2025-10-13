@@ -10,6 +10,7 @@
 #define BG_RED "\033[41m"
 #define UNDERLINE "\033[4m"
 #define LAVENDER "\033[95m"
+#define BLUE "\033[34m"
 #define NO_UNDERLINE "\033[24m"
 
 // Splits the string by whitespace into a vector of words.
@@ -66,7 +67,11 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
             total_incorrect++;
           }
         } else {
-          std::cout << "\033[1m" << expected_word[j] << RESET;
+          if (i == typed_words.size() - 1 && !trailing_space) {
+            std::cout << BLUE << "\033[1m" << expected_word[j] << RESET;
+          } else {
+            std::cout << "\033[1m" << expected_word[j] << RESET;
+          }
         }
         if (is_cursor_pos)
           std::cout << NO_UNDERLINE;
@@ -94,7 +99,11 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
           typed_char_index == typed.length() && !trailing_space;
       if (is_cursor_pos)
         std::cout << UNDERLINE;
-      std::cout << "\033[1m" << expected_word << RESET;
+      if (i == typed_words.size()) {
+        std::cout << BLUE << "\033[1m" << expected_word << RESET;
+      } else {
+        std::cout << "\033[1m" << expected_word << RESET;
+      }
       if (is_cursor_pos)
         std::cout << NO_UNDERLINE;
     }
