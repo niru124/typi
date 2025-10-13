@@ -17,5 +17,18 @@ make
 sudo cp typi /usr/local/bin
 
 # Run the executable
+# Example: Start a typing test with default number of words
 ./typi
+
+# Example: Start a typing test with 10 words
+# ./typi -n 10
+
+# Example: Start a typing test with 50 words
+# ./typi -n 50
+
+# Example: Show typing progress
+# ./typi -sp
+
+# Example: Show help message
+# ./typi -h
 
