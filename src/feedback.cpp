@@ -33,7 +33,8 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
   std::cout << "\r\033[J";
 
   int term_width = getTerminalWidth();
-  lines_printed = (expected.length() / term_width) + 1;
+  int current_line_length = 0;
+  int actual_lines_rendered = 0;
 
   int total_correct = 0;
   int total_incorrect = 0;
@@ -55,6 +56,19 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
   for (size_t i = 0; i < expected_words.size(); ++i) {
     const std::string &expected_word = expected_words[i];
     bool is_current_word = (i == current_word_idx);
+
+    int word_display_length = expected_word.length();
+    if (i < typed_words.size() && typed_words[i].length() > expected_word.length()) {
+        word_display_length = typed_words[i].length();
+    }
+
+    // Check if the word (plus a space if not the last word) will fit on the current line
+    // If not, move to the next line
+    if (current_line_length + word_display_length + (i < expected_words.size() - 1 ? 1 : 0) > term_width && current_line_length > 0) {
+      std::cout << "\n";
+      actual_lines_rendered++;
+      current_line_length = 0;
+    }
 
     if (i < typed_words.size()) {
       const std::string &typed_word = typed_words[i];
@@ -113,6 +127,8 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
         std::cout << NO_UNDERLINE;
     }
 
+    current_line_length += word_display_length;
+
     // Correctly advance the character counter and render the space
     if (i < expected_words.size() - 1) {
       if (i < typed_words.size()) {
@@ -125,11 +141,8 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
           (typed_char_index - 1 == typed.length()) ||
           (trailing_space && typed_char_index - 1 == typed.length() - 1);
 
-      // if (is_cursor_pos) {
-      //   std::cout << UNDERLINE << " " << NO_UNDERLINE;
-      // } else {
-        std::cout << " ";
-      // }
+      std::cout << " ";
+      current_line_length++;
     }
   }
 
@@ -140,6 +153,8 @@ std::pair<int, int> showLiveFeedback2(const std::string &expected,
   }
 
   std::cout << std::endl;
+  actual_lines_rendered++; // For the last std::endl
+  lines_printed = actual_lines_rendered;
   std::cout.flush();
 
   return {total_correct, total_incorrect};

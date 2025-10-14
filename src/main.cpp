@@ -262,6 +262,13 @@ int main(int argc, char *argv[]) {
       x.push_back(i);
 
     make_graph(x, y);
+#ifdef _WIN32                                                                                                                          
+    system("start plot_outputpng");                                                                                                  
+#elif __APPLE__                                                                                                                       
+      system("open plot_output.png");                                                                                                   
+#else                                                                                                                                 
+      system("xdg-open plot_output.png");                                                                                               
+#endif 
     system("xdg-open plot_output.png");
   }
 
