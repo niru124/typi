@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <tuple>
+#include <chrono>
 
 struct TypingResult {
     std::string timestamp;
@@ -13,6 +14,12 @@ struct TypingResult {
     int incorrect_chars;
     double time_taken_seconds;
 };
+
+struct TypingEvent {
+    char character;
+    std::chrono::high_resolution_clock::time_point timestamp;
+};
+
 
 void initDatabase(const std::string& db_path);
 void insertResult(const std::string& db_path, const TypingResult& result);

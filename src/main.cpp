@@ -39,6 +39,18 @@ vector<string> loadWordsFromFile(const string &filepath) {
   return words;
 }
 
+// Default words to use if file loading fails or file is empty
+const std::vector<std::string> default_words = {
+    "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog",
+    "apple", "banana", "orange", "grape", "strawberry", "blueberry", "peach",
+    "house", "car", "tree", "flower", "river", "mountain", "ocean",
+    "happy", "sad", "angry", "excited", "calm", "brave", "kind",
+    "book", "pen", "paper", "computer", "phone", "watch", "shoes",
+    "walk", "run", "jump", "sleep", "eat", "drink", "read", "write",
+    "sun", "moon", "star", "cloud", "rain", "snow", "wind",
+    "friend", "family", "teacher", "student", "doctor", "artist", "musician"
+};
+
 int main(int argc, char *argv[]) {
   initDatabase(DB_PATH);
 
@@ -102,9 +114,14 @@ int main(int argc, char *argv[]) {
     cin.ignore(); // Consume the newline character left by previous cin
     cin.get();    // Wait for user to press Enter
   } else if (start_test) {
-    vector<string> all_words = loadWordsFromFile("/home/nirantar/Downloads/Downloads/bashi/cpp/files/typi/src/words.txt");
+    vector<string> all_words = loadWordsFromFile("src/words.txt");
     if (all_words.empty()) {
-      cerr << "No words loaded. Exiting test." << endl;
+      cerr << "No words loaded from file. Using default words." << endl;
+      all_words = default_words;
+    }
+
+    if (all_words.empty()) {
+      cerr << "No words available. Exiting test." << endl;
       cin.ignore();
       cin.get();
       return 1;
@@ -150,6 +167,7 @@ int main(int argc, char *argv[]) {
     bool started = false;
     string current_word;
     int correct_chars_total = 0;
+    std::vector<TypingEvent> typing_events;
 
     total_start_time = high_resolution_clock::now();
     word_start_time = total_start_time;
@@ -191,6 +209,7 @@ int main(int argc, char *argv[]) {
         }
         break;
       } else if (isprint(c)) {
+        typing_events.push_back({c, high_resolution_clock::now()});
         typed += c;
 
         if (c == ' ') {
@@ -227,16 +246,32 @@ int main(int argc, char *argv[]) {
     disableRawMode(); // restore terminal settings
     cout << "\n\n";
 
-    duration<double> total_duration = total_end_time - total_start_time;
-    double total_minutes = total_duration.count() / 60.0;
+    double total_typing_seconds = 0.0;
+    if (typing_events.size() > 1) {
+        for (size_t i = 0; i < typing_events.size() - 1; ++i) {
+            total_typing_seconds += duration<double>(typing_events[i+1].timestamp - typing_events[i].timestamp).count();
+        }
+    }
+    double total_minutes = total_typing_seconds / 60.0;
 
     int total_chars = expected.length() - (n - 1); // remove n-1 spaces
-    int grossWPM = ((res.first / 5.0) / total_minutes);
-    int netWPM = (grossWPM - (res.second / total_minutes));
+    int grossWPM = 0;
+    int netWPM = 0;
+
+    if (total_typing_seconds > 0.001 && typing_events.size() > 1) {
+        double gross_cps = (static_cast<double>(typing_events.size() - 1) / total_typing_seconds);
+        grossWPM = static_cast<int>((gross_cps * 60.0) / 5.0);
+        netWPM = (grossWPM - (res.second / total_minutes));
+    } else if (total_typing_seconds > 0.001 && typing_events.size() == 1) {
+        // Handle case with only one key press (no duration between events)
+        // In this scenario, CPS is undefined or 0, so WPM should also be 0.
+        grossWPM = 0;
+        netWPM = 0;
+    }
 
     cout << fixed << setprecision(2);
     printBold("Time taken: ");
-    cout << total_duration.count() << " seconds (" << total_minutes << " minutes)" << endl;
+    cout << total_typing_seconds << " seconds (total typing time) (" << total_minutes << " minutes)" << endl;
     printBold("Correct: ");
     cout << res.first << ", Incorrect: " << res.second << endl;
     printBold("Gross WPM: ");
@@ -253,7 +288,7 @@ int main(int argc, char *argv[]) {
     result.net_wpm = netWPM;
     result.correct_chars = res.first;
     result.incorrect_chars = res.second;
-    result.time_taken_seconds = total_duration.count();
+    result.time_taken_seconds = total_typing_seconds;
     insertResult(DB_PATH, result);
 
     vector<int> x;
@@ -269,7 +304,6 @@ int main(int argc, char *argv[]) {
 #else                                                                                                                                 
       system("xdg-open plot_output.png");                                                                                               
 #endif 
-    system("xdg-open plot_output.png");
   }
 
   return 0;
