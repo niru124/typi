@@ -3,6 +3,10 @@
 A simple terminal-based typing test application with a text user interface (TUI).
 ![img](./assets/251113_14h00m01s_screenshot_1.png)
 
+---
+
+![img](./assets/251113_14h06m24s_screenshot.png)
+
 ## Installation
 
 Clone the repository and run the setup script:
