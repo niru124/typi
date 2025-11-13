@@ -1,6 +1,7 @@
 # Typing Test TUI
 
 A simple terminal-based typing test application with a text user interface (TUI).
+![img](./assets/251113_14h00m01s_screenshot.png)
 
 ## Installation
 
