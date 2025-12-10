@@ -9,11 +9,12 @@ using namespace std;
 
 void make_graph(vector<int> x, vector<double> y) {
   Plot2D plot;
-  plot.drawCurveFilled(x, y).above().fillColor("orange").lineWidth(6);
-  plot.palette("paired");
+  plot.drawCurveFilled(x, y).above().fillColor("orange").lineWidth(6).label(
+      "wpm");
 
   plot.xlabel("Word");
   plot.ylabel("WPM");
+  plot.palette("dark2");
 
   Figure fig = {{plot}};
   fig.title("WPM");
